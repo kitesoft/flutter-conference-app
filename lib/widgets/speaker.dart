@@ -13,7 +13,7 @@ class SpeakerWidget extends StatelessWidget {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => (TalkWidget(boss))));
+            builder: (context) => (TalkWidget(boss, popBack: true))));
   }
 
   Widget _getTalks(BuildContext context) {
